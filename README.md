@@ -1,12 +1,17 @@
 CREATE TABLE IF NOT EXISTS cliente(
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  nome TEXT NOT NULL,
-  telefone TEXT NOT NULL,
-  cpf TEXT NOT NULL UNIQUE
+  	cliente integer PRIMARY KEY AUTOINCREMENT,
+  	nome text NOT NULL,
+  	cpf text NOT NULL UNIQUE,
+  	cep text NOT NULL,
+  	telefone text NOT NULL
+ 
   );
-  /*
-  INSERT INTO cliente (nome, telefone, cpf)
+ 
+  INSERT INTO cliente (nome,cpf,cep,telefone)
   VALUES
-  /*
-  ('Luís','459999999', '000.000.000.02');
-  SELECT * FROM cliente;
+  ('felipe','116.545.654-65','Rua das rosas','45 9970-9876'),
+  ('henrique','438.834.384-65','Rua da academia','45 5438-4854');
+ 
+ 
+   select * FROM cliente;
+   
